@@ -5,7 +5,7 @@ function getBdd()
 
 				try 
 				{ 
-				 $bdd = new PDO('mysql:host=localhost;dbname=espace_membres', 'root', ''); 
+				 $bdd = new PDO('mysql:host=localhost;dbname=espace_membre', 'root', ''); 
 				$bdd -> exec("set names utf8"); // pour passer à l'UTF 8  ou alors $bdd = new  
 				 
 				} 
