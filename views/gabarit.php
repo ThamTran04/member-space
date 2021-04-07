@@ -5,16 +5,18 @@
 
 
 <main class="container">
-<?php require_once '_partials/errors.php'?>
     
-<?php 
-if (!empty($_SESSION['message_flash']))
-{
-   echo $_SESSION['message_flash'];  
-   $_SESSION['message_flash']=[]; //pour initialiser le tableau session
-}
+    <?php  require_once '_partials/errors.php'; ?>
 
-?>
+    <?php  
+    		if (!empty($_SESSION['messages_flash']))
+    		{
+				echo $_SESSION['messages_flash'];
+				$_SESSION['messages_flash']=[];
+    		}
+
+      ?>
+
 <?= $content;  ?>
 
 
